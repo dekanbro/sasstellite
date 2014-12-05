@@ -1,0 +1,128 @@
+// Base overrides
+$base-line-height: 17pt;
+$base-text-size: 11.5pt;
+$heading-text-align: center;
+$font-size-httlpgttl: 20pt;
+$font-size-tlpgttl:   50pt;
+$font-size-tlpgsub:   18pt;
+$font-size-chapnum: 11pt;
+$font-size-subttl:  14pt ;
+$font-size-tlpgau:    28pt;
+$font-size-chapttl: 24pt;
+$font-size-partnum: 14pt;
+$font-size-partttl: 44pt;
+$font-size-bma:     12pt;
+$font-size-bmb:     12pt;
+$drop-cap: big-cap;
+
+// Inherit from base...
+ 
+@import '../base/base_line';
+
+/* theme specific overrides 
+.chapter > p:first-of-type:first-line { 
+font-variant: small-caps;
+}
+h2.FMTTL + p:first-line { 
+font-variant: small-caps;
+}
+.TXBDINGBATS + p:first-line, .TXB + p:first-line {
+    font-variant: small-caps;
+}
+*/
+// #body-matter h2 + h3 + blockquote {
+//     margin-top: $base-line-height/3;
+//     font-family: SAT_disp_italic;
+//     float:left;
+//     min-height: $base-line-height * 15 ;
+//     width:30%;
+// 
+//  }
+// #body-matter h2 + blockquote {
+//     margin-top: $base-line-height/3;
+//     font-family: SAT_disp_italic;
+//     float:left;
+//     min-height: $base-line-height * 15 ; 
+//     width:30%;
+//  }
+h1.HTTLPGTTL {
+text-align:center;
+    font-family: SAT_disp_regular;
+
+    margin-top: $base-margin-size-xxlarge;
+}
+h1.TTLPGTTL {
+    letter-spacing: 0;
+    font-family: SAT_disp_regular;
+
+    margin-top: $base-margin-size-xlarge;
+
+}
+.TTLPGSUB {
+    margin-top: .5em;
+
+    font-family: SAT_disp_italic;
+    text-align:center;
+    width:33%;
+    letter-spacing: 0;
+    display: inline-block;
+}
+.part .svg-orn {
+display:block;
+text-align: center;
+width:100px;
+margin: $base-margin-size-xlarge auto;
+transform:rotate(180deg);
+}
+.chapter .svg-orn {
+display:block;
+text-align: center;
+width:50px;
+margin: 0 auto $base-margin-size-medium auto;
+transform:rotate(180deg);
+}
+.CHAPNUM {
+    margin-bottom: 1em;
+}
+.svg-orn-left {
+display: inline-block;
+width:33%;
+height: 40px;
+transform:rotate(270deg);
+}
+.svg-orn-right {
+display: inline-block;
+width:33%;
+height: 40px;
+transform:rotate(90deg);
+}
+.TTLPGAU {
+margin-left: $font-size-tlpgsub / 2;
+margin-top: $base-margin-size-xxlarge;
+    font-family: SAT_disp_regular;
+
+}
+h2.CHAPTTL {
+    font-family: SAT_disp_regular;
+    /* text-indent:-.8em; */
+    margin-bottom:$base-margin-size-medium;
+}
+h2.FMTTL {
+    font-family: SAT_disp_regular;
+    /* text-indent:-.8em; */
+    margin-bottom:$base-margin-size-large;
+
+}
+h3.SUB {
+    font-family: SAT_italic;
+}
+h6.PARTNUM {
+    font-family: SAT_italic;
+    margin-bottom:$base-margin-size-xlarge;
+}
+h2.PARTTTL {
+    font-family: SAT_disp_regular;
+}
+h4.BMA {
+    font-family: SAT_disp_regular;
+}

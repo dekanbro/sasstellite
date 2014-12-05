@@ -1,0 +1,1229 @@
+/* red:cc3333 ^=begins with, $=ends with, *=any exact match in string */
+body {
+	font-family: SAT_regular;
+	-webkit-hyphens:auto;
+	hyphens: auto;
+	hyphenate-before: 2;
+	hyphenate-after: 3;
+	hyphenate-lines: 2;
+	}
+
+p {
+	font-size: 1em;
+	line-height: 1.3em;
+	text-align: justify;
+	margin: 0;
+	text-indent:0pt;
+	}
+
+p+p {
+	text-indent: 1.3em;
+	}
+#body-matter .chapter > p:first-of-type:first-letter { 
+	font-family:SAT_disp_regular;
+	float: left; 
+	font-weight: normal;
+	font-size: 3.05em; 
+	padding-right: 1px;
+	margin-bottom:-.1em;
+	margin-top:.1em;
+	}
+.DROPCAP { 
+	font-family:SAT_disp_regular;
+	float: left; 
+	font-weight: normal;
+	font-size: 3.05em; 
+	padding-right: 1px;
+	margin-bottom:-.1em;
+	margin-top:.1em;
+	}
+
+@media amzn-kf8 {
+#body-matter .chapter > p:first-of-type:first-letter { 
+	font-family:SAT_disp_regular;
+	float: left; 
+	font-weight: normal;
+	font-size: 3em; 
+	margin-right: 2px;
+	margin-bottom:-.2em;
+	margin-top:-.15em;
+	}
+.DROPCAP { 
+	font-family:SAT_disp_regular;
+	float: left; 
+	font-weight: normal;
+	font-size: 3em; 
+	margin-right: 2px;
+	margin-bottom:-.2em;
+	margin-top:-.15em;
+	}
+}	
+	
+blockquote {
+	font-size: .875em;
+	margin:1.3em 1.3em;
+	}
+blockquote p {
+	font-family: SAT_regular;
+	font-size: .875em;
+	}
+blockquote+p {
+	text-indent: 1.3em;
+	}
+
+ul {
+	list-style-type: disc;
+	list-style-position: inside;
+
+	font-family: SAT_regular;
+
+	margin:1.3em 1.3em 1.3em 2.6em;
+	text-indent: -1.3em;
+	}
+ol {
+	list-style-position: inside;
+
+	font-family: SAT_regular;
+
+	margin:1.3em 1.3em 1.3em 2.6em;
+	text-indent: -1.3em;
+	}
+li {
+	text-align: justify;
+	font-size: 1em;
+	line-height: 1.3em;
+	}
+
+a {
+	color:inherit;
+	text-decoration: none;
+	}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	}
+
+.TTLPGLOGO {
+	text-align: center;
+	text-indent: 0;
+	margin-top:48pt;
+	}
+
+/*#title img {
+	width: 50%;
+	}*/
+
+/*--------------Headings--------------*/
+
+.HTTLPGTTL {
+	-webkit-hyphens:none;
+	hyphens:none;
+
+	font-family:SAT_bold;
+
+	font-size:1.6em;
+	line-height: 1.3em;
+
+	text-transform: uppercase;
+	letter-spacing: .15em;
+
+	text-align: center;
+	margin:25% 10% 5% 10%;
+	}
+
+.TTLPGTTL {
+	-webkit-hyphens:none;
+	hyphens:none;
+
+	font-family:SAT_bold;
+
+	font-size: 2em;
+	line-height: 1.3em;
+
+	text-transform: uppercase;
+	letter-spacing: .15em;
+
+	text-align: center;
+	margin:1em 10% 5% 10%;
+	}
+
+.TTLPGSUB {
+	-webkit-hyphens:none;
+	hyphens:none;
+
+	font-family:SAT_italic;
+
+	font-size:1.6em;
+	line-height:1.3em;
+
+	letter-spacing: .05em;
+
+	text-align:center;
+	margin:0 10% 15% 10%;
+	}
+
+.TTLPGAU {
+	-webkit-hyphens:none;
+	hyphens:none;
+
+	font-family:SAT_bold;
+
+	font-size:1.3em;
+	line-height:1.3em;
+
+	text-transform:uppercase;
+	letter-spacing: .15em;
+
+	text-align:center;
+	margin:0px;
+	}
+
+.TTLPGAU + .CONTRIB {
+	hyphens: none;
+	-webkit-hyphens:none;
+
+	font-family:SAT_italic;
+
+	font-size:1.3em;
+	line-height:1.4em;
+
+	text-align:center;
+	margin:.4em 0 0 0;
+	}
+
+.FMTTL, .RMTTL {
+	-webkit-hyphens:none;
+	hyphens:none;
+
+	font-family:SAT_bold;
+
+	font-size: 1.3em;
+	line-height: 1.3em;
+	
+	text-transform: uppercase;
+	letter-spacing: .15em;
+
+	text-align: center;
+	margin:1em 0 3em 0;
+	text-indent: 0; 
+	}
+
+.FMTTL + .SUB, .RMTTL + .SUB, .RMTTL + .RMSUB {
+	-webkit-hyphens:none;
+	hyphens:none;
+
+	font-family:SAT_bold;
+	font-size: 1.3em;
+	line-height: 1.3em;
+
+	text-align: center;
+	margin:1.3em 0 3em 0;
+	text-indent: 0; 
+	}
+
+.FMTTL + .BMFIRST {
+	margin: 3em 0 0 0;
+	}
+
+.RMTTL + .BMFIRST {
+	margin: 3em 0 0 0;
+	}
+
+.PARTNUM {
+	-webkit-hyphens:none;
+	hyphens:none;
+
+	font-family: SAT_regular;
+
+	font-size: 1.4em;
+	line-height: 1.3em;
+
+	letter-spacing: .1em;
+
+	text-align:center;
+	margin:2em 0 2em 0; 
+	}
+
+.PARTTTL {
+	-webkit-hyphens:none;
+	hyphens:none;
+
+	font-family:SAT_regular;
+
+	font-size: 2em;
+	line-height: 1.3em;
+
+	text-align: center;
+	margin:0;
+	}
+
+.CHAPNUM {
+	-webkit-hyphens:none;
+	hyphens:none;
+
+	font-family:SAT_bold;
+
+	font-size: 1.05em;
+	line-height: 1.3em;
+
+	text-transform: uppercase;
+	letter-spacing: .1em;
+
+	text-align: center;
+	margin:1em 0 2em 0;
+	}
+
+.CHAPTTL {
+	-webkit-hyphens:none;
+	hyphens:none;
+
+	font-family:SAT_bold;
+
+	font-size:1.5em;
+	line-height:1.3em;
+
+	text-transform: uppercase;
+	letter-spacing: .1em;
+
+	text-align:center;
+	margin:0 0 0 0;
+	}
+
+.CHAPTTL + .SUB, .CHAPTTL + h3 {
+	-webkit-hyphens:none;
+	hyphens:none;
+
+	font-family:SAT_bold;
+	font-style:italic;
+	font-size: 1.3em;
+	line-height: 1.3em;
+
+	text-align: center;
+	margin:1.3em 0 3em 0;
+	text-indent: 0; 
+}
+.CHAPSUB {
+	-webkit-hyphens:none;
+	hyphens:none;
+
+	font-family:SAT_bold-italic;
+	font-size: 1.3em;
+	line-height: 1.3em;
+
+	text-align: center;
+	margin:1.3em 0 3em 0;
+	text-indent: 0; 
+}
+.CHAPNUM:before {
+	content: "CHAPTER ";
+}
+.CHAPTTL + .EPI {
+	margin:2em 10% 0 10%;
+	}
+.CHAPTTL + .BMFIRST, h2 + p {
+	margin:3em 0 0 0;
+	}
+.CHAPTTL + .BMA, .CHAPTTL + h4 {
+	margin:2em 0 .6em 0;
+}
+
+.BMA, h4 {
+	hyphens: none;
+	-webkit-hyphens: none;
+
+	font-family: SAT_bold;
+
+	font-size: .875em;
+	text-transform: uppercase;
+	letter-spacing: .15em;
+	margin: 2em 0 .6em 0;
+	text-align: center;	
+	text-indent: 0;
+	}
+
+.BMB, h5 {
+	hyphens: none;
+	-webkit-hyphens: none;
+
+	font-family: SAT_italic;
+
+	font-size: 1em;
+	letter-spacing: .05em;
+	margin: 2.1em 0 .5em 0;
+	text-align: left;
+	text-indent: 0;
+	}
+
+.BMC {
+	hyphens: none;
+	-webkit-hyphens: none;
+
+	font-family: SAT_bold;
+
+	font-size: inherit;
+	margin: 1.1em 0 .2em 0;
+	text-align: left;
+	text-indent: 0;
+	}
+
+/*------FM--------praise, card, copyright, dedication, epigraph-------FM-------*/
+
+.PRAISE {
+	font-size:.8em;
+	line-height:1.2em;
+
+	margin:0 1.3em;
+	text-indent:0px;
+	}
+
+.PRAISEAU {
+	-epub-hyphens:none;
+	-webkit-hyphens:none;
+
+	font-family: SAT_bold;
+
+	font-size:.75em;
+	line-height:1em;
+
+	text-align:right;
+	margin:.2em 1.3em 2.4em 4em;
+	}
+
+.CARDA {
+	-epub-hyphens:none;
+	-webkit-hyphens:none;
+
+	font-family: SAT_bold;
+	
+	font-size: .75em;
+	line-height: 1.05em;
+	
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	
+	text-align: center;
+	margin: 0pt 2em 0 2em;
+	}
+
+.CARD {
+	-epub-hyphens:none;
+	-webkit-hyphens:none;
+
+	font-family: SAT_italic;
+	
+	font-size: .8em;
+	line-height: 1.05em;
+	
+	text-align: center;
+	margin: .5em 2em 0 2em;
+	}
+
+.CPYINFO {
+	hyphens: none;
+	-webkit-hyphens:none;
+
+	font-family:SAT_regular;
+	font-size:.7em;
+	line-height:1em;
+
+	text-align:left;
+	margin:0 25% 0 0;
+	text-indent:0;
+	}
+
+#dedication {
+	margin-top: 25%;
+	}
+
+.DED {
+	hyphens: none;
+	-webkit-hyphens:none;
+
+	font-family:SAT_italic;
+	font-size:1em;
+	line-height:1.3em;
+
+	text-align:center;
+	margin:0 15%;
+	text-indent:0;
+	}
+
+.EPI {
+	font-family: SAT_italic;
+	font-size: inherit;
+	margin: 0 1.3em 0 1.3em;
+	text-indent: 0;
+	}
+	
+.EPIAU + .EPI {
+	margin: 1.3em 1.3em 0 1.3em;
+	}
+	
+.EPIAU {
+	hyphens: none;
+	-webkit-hyphens: none;
+
+	font-family:SAT_bold;
+	font-size:.75em;
+	line-height:1.2em;
+
+	text-align: right;
+	margin: .2em 1.3em 0 1.3em;
+	text-indent:0;
+	}
+	
+.EPIAU + .BMFIRST {
+	margin-top:3.7em;
+	}
+
+/*-----------------------Body Matter-----------------------*/
+
+.BMFIRST, .FMFIRST {
+	text-indent: inherit;
+	}
+
+.BM-TXT, .FM-TXT {
+	text-indent: 1.3em;
+	}
+
+.SIG {
+	font-family:SAT_italic;
+	text-align: right;
+	}
+	
+.SIG:before {
+	font-family:SAT_regular;
+	content: "â€”"
+}
+
+.TXBDINGBATS {
+	text-align: center;
+	line-height: 1.3em;
+	margin: .65em 0 .65em 0;
+	text-indent: 0;
+	content: "\2022 \a0 \a0 \a0 \a0 \a0 \2022 \a0 \a0 \a0 \a0 \a0 \2022 ";
+	}
+
+.TXB {
+	text-align: center;
+	margin-top:.5em;
+	line-height: 1em;
+	}
+.TXBDINGBATS + p, .TXB + p {
+    text-indent: 0;
+	}
+
+
+/*--------------img and captions--------------*/
+
+img { 
+	border:none;
+	display:block;
+	margin:0 auto; 
+	max-width: 100%; 
+	max-height: 100%; 
+	}
+
+.CAP {
+	hyphens:none;
+	-webkit-hyphens:none;
+
+	font-size:.75em;
+	line-height:1em;
+
+	margin: 0;
+	padding: 6px 0 0 0;
+	text-indent:0px;
+	}
+
+.FIGTOP {
+	float:top;
+	margin: 0 0 2em 0;
+	line-height: 0;
+	padding: 0;
+	}
+
+.FIGTOP img {
+	width:100%;
+	margin: 0;
+	padding: 0;
+	}
+
+.FIGBOT{
+	float:bottom;
+	}
+
+/*--------------other Body--------------*/
+
+.CRunin {
+	text-indent: 0;
+	margin-top: 1.3em;
+	}
+
+.CTR {
+	margin: 1.3em 0;
+	text-align: center;
+	}
+	
+.BOX {
+	font-family: sans-serif;
+	
+	font-size: .8em;
+	line-height: 1.3em;
+	
+	margin: .5em 0 0 0;
+	text-indent: 0;
+	}
+
+/*--------------Lists--------------*/
+
+.BuLst1st {
+	hyphens:none;
+	-webkit-hyphens:none;
+	text-align: left;
+	margin:1.3em 0 0 1.6em;
+	text-indent: -.8em;
+	}
+.BuLstMd {
+	hyphens:none;
+	-webkit-hyphens:none;
+	text-align: left;
+	margin:0 0 0 1.6em;
+	text-indent: -.8em;
+	}
+.BuLstLs {
+	hyphens:none;
+	-webkit-hyphens:none;
+	text-align: left;
+	margin:0 0 1.3em 1.6em;
+	text-indent: -.8em;
+	}
+
+.NL1st {
+	margin:1.3em 0 0 2em;
+	text-indent: -1em;
+	}
+.NLMd {
+	margin:0 0 0 2em;
+	text-indent: -1em;
+	}
+.NLLs {
+	margin:0 0 1.3em 2em;
+	text-indent: -1em;
+	}
+
+span.NLnum {
+	display: inline-block;
+	width:3em;
+	text-align: right;
+	margin-left:-.8em;
+	padding-right:2px;
+	}
+
+.LL1st {
+	margin:1.3em 0 0 2em;
+	text-indent: -1em;
+	}
+.LLMd {
+	margin:0 0 0 2em;
+	text-indent: -1em;
+	}
+.LLLs {
+	margin:0 0 1.3em 2em;
+	text-indent: -1em;
+	}
+
+.UL1st {
+	margin:1.3em 0 0 1.6em;
+	text-indent: -.8em;
+	}
+.ULMd {
+	margin:0 0 0 1.6em;
+	text-indent: -.8em;
+	}
+.ULLs {
+	margin:0 0 1.3em 1.6em;
+	text-indent: -.8em;
+	}
+
+/*--------------Letter--------------*/
+
+.SAL {
+	font-style: italic;
+	margin-left: 1.3em;
+	margin-right: 1.3em;
+	margin-top: 1.3em;
+
+	text-indent: 0pt;
+	}
+
+.SAL + .LET1st {
+	margin-top:0;
+	}
+
+.LET1st {
+	font-family: SAT_italic;
+	margin:1.3em 1.3em 0 1.3em;
+
+	text-indent: 1em;
+	}
+.LETMd {
+	font-family: SAT_italic;
+	margin:0 1.3em 0 1.3em;
+
+	text-indent: 1em;
+	}
+.LETLs {
+	font-family: SAT_italic;
+	margin:0 1.3em 1.3em 1.3em;
+
+	text-indent: 1em;
+	}
+
+/*--------------Dialogue, Poem, Extract--------------*/
+
+.DI1st {
+	margin:1.3em 0 0 1.6em;
+	text-indent: -.8em;
+	}
+.DIMd {
+	margin:0 0 0 1.6em;
+	text-indent: -.8em;
+	}
+.DILs {
+	margin:0 0 1.3em 1.6em;
+	text-indent: -.8em;
+	}
+
+.PO1st {
+	hyphens: none;
+	-webkit-hyphens: none;
+
+	font-family:SAT_italic;
+	text-align: left;
+
+	margin: 1.3em 0 0 1.6em;
+	text-indent: -.8em;
+	}
+.POMd {
+	hyphens: none;
+	-webkit-hyphens: none;
+
+	font-family:SAT_italic;
+	text-align: left;
+
+	margin: 0 0 0 1.6em;
+	text-indent: -.8em;
+	}
+.PO1st {
+	hyphens: none;
+	-webkit-hyphens: none;
+
+	font-family:SAT_italic;
+	text-align: left;
+
+	margin: 0 0 1.3em 1.6em;
+	text-indent: -.8em;
+	}
+
+.EXT {
+	font-size: .9em;
+
+	margin: 1.3em 1.3em;
+	text-indent:0;
+	}
+
+.EXT1st {
+	font-size: .9em;
+
+	margin: 1.3em 1.3em 0 1.3em;
+	text-indent:0;
+	}
+
+.EXTMd {
+	font-size: .9em;
+
+	margin: 0 1.3em 0 1.3em;
+	text-indent: 1em;
+	}
+.EXTLs {
+	font-size: .9em;
+
+	margin: 0 1.3em 1.3em 1.3em;
+	text-indent: 1em;
+	}
+
+.EXTLs + .BMA, .EXTLs + h4 {
+	margin-top:2em;
+}
+.EXT + .BMA, .EXT + h4 {
+	margin-top:2em;
+}
+/*--------------Sidebar and Cookbook--------------*/
+
+.SB {
+	-webkit-hyphens:none;
+	hyphens:none;
+	float: left;
+	width: 150px;
+	color: gray;
+
+	font-family: sans-serif;
+
+	font-size: .9em;
+	line-height: 1.2em;
+
+	text-align: left;
+	padding: 1em 1em 0 0;
+	}
+
+.RECIPETTL {
+	page-break-before: always;
+	padding-top:1.3em;
+
+	font-family: SAT_italic;
+
+	font-size: 1.4em;
+	line-height: 1.3em;
+
+	text-align: center;
+	margin:0 0 .65em 0;
+	text-indent: 0;
+
+	border-top:dotted #e5e5e5 4px;
+	}
+
+.RECIPETXT {
+	-webkit-hyphens:none;
+	hyphens:none;
+	
+	font-family: SAT_italic;
+	
+	text-align: center;
+	margin:0 0 1.3em 0;
+	text-indent: 0;
+	}
+	
+.RECIPENOTE {
+	font-size: .8em;
+	line-height: 1.05em;
+	
+	margin: 1.3em 0 0 0;
+	}
+
+.INGRBOX {
+	background-color: #e5e5e5;
+	float: left;
+	width:400px;
+	margin: 0 1.4em .5em -1em;
+	padding: .5em;
+	border: 1px gray solid;
+	}
+
+.INGR {
+	-webkit-hyphens: none;
+	hyphens:none;
+
+	font-family: SAT_bold;
+
+	font-size:.8em;	
+	line-height: 1.05em;
+
+	text-align: left;
+	margin: 0 0 0 .8em;
+	text-indent: -.8em;
+	}
+
+.INGA {
+	-webkit-hyphens: none;
+	hyphens:none;
+
+	font-family: SAT_bold;
+
+	font-size:.8em;
+	line-height: 1.2em;
+
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	
+	text-align: left;
+	margin:8pt 0 0pt 0;
+	text-indent: 0;
+	}
+
+.DIRECTA {
+	font-family: SAT_bold;
+
+	font-size:.9em; 
+	line-height: 1.3em;
+
+	text-align: center;
+	margin: 1.3em 0 0 0pt;
+	}
+
+.DIRECT, .TIP {
+	font-size:.9em; 
+	line-height: 1.3em;
+
+	margin: 0 0 0 1em;
+	text-indent:-1em;
+	}
+
+.VARIATION {
+	font-size:.9em; 
+	line-height: 1.3em;
+
+	margin: 1.3em 0 0 0;
+	}
+
+.CookTime {
+	font-family: SAT_italic;
+	font-size:.9em;
+	margin: .5em 0;
+	text-align: center;
+	text-indent: 0;
+	}
+
+.SERVINGS {
+	font-family: SAT_bold-italic;
+	font-size:.9em;
+	margin: .5em 0;
+	text-align: center;
+	text-indent: 0;
+	}
+
+/*-----------------------Body Matter---------END-----------*/
+
+
+/*-------------RM, end and footnotes--------------*/
+.RMA {
+	hyphens: none;
+	-webkit-hyphens: none;
+
+	font-family: SAT_bold;
+	font-size: .75em;
+	line-height: 1em;
+
+	text-transform: uppercase;
+	letter-spacing: .1em;
+
+	text-align: center;
+	margin: 1.7em 0 .3em 0;
+	}
+
+.RMB {
+	hyphens: none;
+	-webkit-hyphens: none;
+
+	font-family: SAT_bold-italic;
+	font-size: .8em;
+	line-height: 1em;
+	
+	text-align: left;
+	margin: .8em 0 .2em 0;
+	}
+
+.RMFIRST {
+	font-size: .8em;
+	line-height: 1em;
+	text-indent: 0;
+	}
+
+.RMTXT {
+	font-size: .8em;
+	line-height: 1em;
+	text-indent: 1em;
+	}	
+
+.BIB, .GLOS {
+	font-size: .8em;
+	line-height: 1em;
+	margin-left:1em;
+	text-indent: -1em;
+	}
+
+.IDX {
+	hyphens:none;
+	-webkit-hyphens:none;
+
+	font-size:.75em;
+	line-height:.9em;
+
+	text-align:left;
+	margin:0 0 0 1.6em;
+	text-indent:-1.6em;
+	}
+
+.IDXSUB, .IndexSub {
+	hyphens:none;
+	-webkit-hyphens:none;
+
+	font-size:.75em;
+	line-height:.9em;
+
+	text-align:left;
+	margin:0 0 0 1.6em;
+	text-indent:-.8em;
+	}
+
+.IDXSUBSUB, .IndexSubSub {
+	hyphens:none;
+	-webkit-hyphens:none;
+
+	font-size:.75em;
+	line-height:.9em;
+
+	text-align:left;
+	margin:0 0 0 2.4em;
+	text-indent:-.8em;
+	}
+
+/*--------footnotes, endnotes, superscript-------*/
+.FN {
+	font-size: .8em;
+	line-height: 1em;
+
+	color: red;
+
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+	}
+
+.EN {
+	font-size: .8em;
+	line-height: 1em;
+	color: blue;
+	text-align: justify;
+	text-indent: 1em;
+	text-decoration: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	
+	}
+
+.note {
+	font-size: .75em;
+	padding: 0;
+	line-height: .8em;
+	margin:0;
+	vertical-align:super;
+	}
+
+#end-notes ul {
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+	}
+
+#end-notes sup {
+	font-size: 1em;
+	vertical-align: baseline;
+	text-decoration: underline;
+	}
+
+#end-notes sup:after {
+	content: ".";
+	padding:0;
+	}
+
+#end-notes li {
+	font-family: SAT_regular;
+	font-size: .8em;
+	line-height: 1em;
+	text-indent: 1em;
+	margin: 0;
+	padding: 0;
+	}
+
+#end-notes li a {
+	text-decoration: none;
+	color: inherit;
+	}
+
+.Note {
+	font-family: SAT_regular;
+	font-size:.8em;
+	line-height:1em;
+
+	text-indent:1em;
+	margin:0px;
+	}
+
+sup {
+	font-size: .75em;
+	padding-left: 2px;
+	padding-right: 2px;
+	line-height: .8em;
+	vertical-align: super;
+	}
+
+/*-----------------RM, end and footnotes--------END--------*/
+
+	
+/*--------------------------TOC------------------------*/
+body {
+	margin:0;
+	padding: 0;
+}
+#contents h2 {
+	margin-left:0;
+}
+#contents h2 + .toc_fm {
+	margin-top: 1em;
+}
+#contents li a {
+	text-decoration: none;
+	color:inherit;
+}
+#contents ul { 
+	text-align:left;
+	list-style-type: none;
+}
+
+/*----------front matter-----------*/
+
+#contents .toc_fm, #contents .toc_fm_list {
+	margin:0 0 1em 0;
+	}
+	
+.TOCFM {
+	font-family: SAT_italic;
+	font-size:1em;
+	line-height:1.3em;
+	margin-left:0;
+	margin-bottom:.25em;
+	text-indent:0em;
+	}
+/*----------body matter-----------*/
+
+#contents .toc_bd_list {
+	margin:0;
+	}
+
+.TOCPART {
+	font-family: SAT_bold;
+	text-align: left;
+	text-indent: 0;
+	font-size:1.05em;
+	line-height:1.3em;
+	margin:1em 0 .25em 0;
+	}
+
+.TOCNUM { 
+	padding-right:.5em;
+	font-family: SAT_bold;
+	letter-spacing: 0;
+	font-size: .875em;
+	/*counter-increment: LiChapterNo;
+	content: " " counter(LiChapterNo);*/
+	}
+/*.TOCCHAP .TOCNUM { 
+	display: inline-block;
+	width:24pt;
+	font-family: SAT_bold;font-weight: bold;
+	text-align: right;
+	margin-left: 0pt;
+	padding-right: 8pt;
+	text-transform: uppercase;
+	letter-spacing: 0;
+	font-size: 11pt;
+	/*counter-increment: LiChapterNo;
+	content: " " counter(LiChapterNo);*/
+	}
+	
+.TOCCHAP {
+/*------margin-left is 
+width of span.num + padding-right------*/
+	font-size:1em;
+	line-height:1.3em;
+	margin-left:0;
+	padding-bottom:.25em;
+	text-indent:0;
+	}
+
+/*----------front matter-----------*/
+
+#contents .toc_rm, #contents .toc_rm_list {
+	margin:1em 0 0 0;
+}
+
+.TOCRM {
+	font-family: SAT_italic;
+	font-size:1em;
+	line-height:1.3em;
+	margin-left:0;
+	margin-bottom:.25em;
+	text-indent:0em;
+	}
+
+/*--------display paragraphs symbol and keep inline in editor---------*/
+
+span span {
+	display:inline;
+	}
+
+span.EN span:before, span.FN span:before {
+	content: "\00B6";
+	}
+
+.NFIRST:before {
+	content: "[1st\00B6]";
+	}
+
+.NFIRST:after {
+	content: "[E1st\00B6]";
+	}
+
+.NTEXT:before {
+	content: "[\00B6]";
+	}
+
+.NTEXT:after {
+	content: "[E\00B6]";
+	}
+
+/*------------------wysiwyg controls------------------*/
+
+
+em {
+	font-style: italic;
+	}
+
+strong {
+	font-family: SAT_bold;
+	}
+
+.left {
+	text-align: left;
+	}
+
+.right {
+	text-align: right;
+	}
+
+.center {
+	text-align: center;
+	}
+
+.full{
+	text-align: justify;
+	}
+
+.open1 {
+letter-spacing:.01em;
+	}
+
+.open2 {
+letter-spacing:.015em;
+	}
+
+.tight1 {
+word-spacing:-.01em;
+	}
+
+.tight2 {
+word-spacing:-.015em;
+	}
+

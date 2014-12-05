@@ -1,0 +1,43 @@
+$doc-widows: 2 !default;
+$doc-orphans: 2 !default;
+
+
+$doc-trim-width: 6.125in !default;
+$doc-trim-height: 9.25in !default;
+$doc-margin-top: 75pt!default;
+$doc-margin-right: 0 !default;
+$doc-margin-bottom: 45pt !default;
+$doc-margin-left: 0 !default;
+
+$doc-margin-outside: 0.8125in!default;
+$doc-margin-inside: 0.8125in!default;
+
+$doc-rh-margin-top: 1in !default;
+
+$doc-rh-font-family: SAT_bold Arial !default;
+$doc-rh-font-transform: uppercase !default;
+$doc-rh-font-spacing: .1em !default;
+$doc-rh-font-size: 9pt !default;
+
+
+$doc-bleed: .25in !default;
+$doc-outside-trim: .625in .9375in !default;
+
+$section-header-margin-top: .22in !default;
+$section-initial-margin-bottom: .74in !default;
+$fn-symbols: counter(footnote, symbols("*", "**", "***", "****", "\2020", "\2021", "\00A7", "1", "2")) !default;
+
+$section-margin-top: 32pt !default;
+$section-margin-bottom: .625in !default;
+
+$front-matter-header-left: counter(page, lower-roman) " \a0 | \a0 " string(Chaptertitle) !default;
+$front-matter-header-right: string(Chaptertitle) " \a0 | \a0 " counter(page, lower-roman) !default;
+$front-matter-header-first: counter(page, lower-roman) !default;
+
+$body-matter-header-left:  counter(page) " \a0 | \a0 " string(Booktitle) !default;
+$body-matter-header-right: string(Chaptertitle) " \a0 | \a0 " counter(page) !default;
+$body-matter-header-first: counter(page) !default;
+
+$rear-matter-header-left:  counter(page) " \a0 | \a0 " string(Chaptertitle) !default;
+$rear-matter-header-right: string(Chaptertitle) " \a0 | \a0 " counter(page) !default;
+$rear-matter-header-first: counter(page) !default;

@@ -1,0 +1,22 @@
+/*--------------Lists--------------*/
+
+ul {
+    hyphens:none;
+    -webkit-hyphens:none;
+    text-align: left;
+    vertical-align: baseline;
+    }
+
+ol {
+    hyphens:none;
+    -webkit-hyphens:none;
+    text-align: left;
+    vertical-align: baseline;
+    }
+
+li {
+    text-align: justify;
+    font-size: $base-text-size;
+    line-height: $list-line-height;
+    margin-top: $list-item-margin-top;
+    }

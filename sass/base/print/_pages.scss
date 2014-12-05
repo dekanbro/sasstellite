@@ -1,0 +1,115 @@
+// CSS Paged Media Module */
+body {
+  widows: $doc-widows;
+  orphans: $doc-orphans;
+}
+
+
+@page {
+  size: $doc-trim-width $doc-trim-height;
+  margin: $doc-margin-top $doc-margin-right $doc-margin-bottom;
+
+}
+
+@page :left { // left page setup interior text box width*/
+margin-left: $doc-margin-outside;
+margin-right: $doc-margin-inside;
+prince-bleed: $doc-bleed 0in $doc-bleed $doc-bleed;
+}
+@page :right { // right page setup interior text box width*/
+margin-left: $doc-margin-inside;
+margin-right: $doc-margin-outside;
+prince-bleed: $doc-bleed $doc-bleed $doc-bleed 0in;
+}
+
+@page {
+  
+  marks: $marks;
+  prince-trim: $doc-outside-trim;
+}
+
+
+// left pages */
+@include section-running-head($pagename: "contents-matter",$align: left, $page: left) {
+      content: $front-matter-header-left;
+    }
+
+
+// right pages */
+@include section-running-head("contents-matter",right,right) {
+      content: $front-matter-header-right;
+    }
+
+// first page of each front matter sub section */
+
+@include section-running-head-first("contents-matter") {
+	    content: $front-matter-header-first;
+	}
+
+@include section-running-head-blank("contents-matter") {}
+
+// define front matter as contents-matter not sectons without headers though*/
+#front-matter > div:not(#title):not(#half-title):not(#copyright):not(#epigraph):not(#dedication):not(#card-page):not(#praise) {
+  page: contents-matter;
+  prince-page-group: start;
+}
+
+// chap is all chapters */
+
+
+// left pages */
+@include section-running-head("chap",left,left) {
+      content: $body-matter-header-left;
+    }
+
+// right pages */
+@include section-running-head("chap",right,right) {
+      content: $body-matter-header-right;
+    }
+// chapters first page headers and footers */
+@include section-running-head-first("chap") {
+	  content: $body-matter-header-first;
+	}
+
+@include section-running-head-blank("chap") {}
+
+// define chapter pages */
+#body-matter .chapter {
+  page: chap;
+  prince-page-group: start;
+}
+
+// part is the part divider */
+@include section-running-head-first("part") {
+	  content: "";
+	}
+// define part */
+#body-matter .part {
+  page: part;
+  prince-page-group: start;
+}
+
+// define rear page groups */
+// left pages */
+
+@include section-running-head("rear",left,left) {
+      content: $rear-matter-header-left;
+    }
+
+// right pages */
+
+@include section-running-head("rear",right,right) {
+      content: $rear-matter-header-right;
+    }
+
+@include section-running-head-first("rear") {
+	  content: $rear-matter-header-first;
+	}
+
+@include section-running-head-blank("rear") {}
+
+
+#rear-matter > div {
+  page: rear;
+  prince-page-group: start;
+}

@@ -1,0 +1,36 @@
+// footend notes */
+p .FN {
+  display: prince-footnote;
+  counter-increment: footnote;
+  color: black;
+  footnote-style-position: inside;
+}
+
+.FN::footnote-call {
+  content: $fn-symbols;
+  font-size: 80%;
+  vertical-align: super;
+  line-height: none;
+}
+
+.FN::footnote-marker {
+  content: $fn-symbols;
+  font-weight: bold;
+  margin-right: 4pt;
+}
+
+// for illustration list */
+#illustrations ul a:after {
+  content: leader(" ") " " target-counter(attr(href, url), page);
+}
+// actual style of footnote box on page */
+@page {
+  counter-reset: footnote;
+  @footnotes {
+    border-top: solid black thin;
+    prince-border-clip: 2in;
+    padding-top: 8pt;
+    footnote-style-position: inside;
+  }
+}
+

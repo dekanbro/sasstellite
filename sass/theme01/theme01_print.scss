@@ -1,0 +1,17 @@
+// Base overrides
+ 
+$body-matter-header-left:  counter(page) " \a0 THEME 01 \a0 " string(Booktitle);
+$body-matter-header-right: string(Chaptertitle) " \a0 THEME 01 \a0 " counter(page);
+$body-matter-header-first: counter(page);
+
+
+// Inherit from base...
+ 
+@import '../base/base_print';
+
+ 
+/**
+ 
+Theme-specific CSS goes here: modules, widgets, plugins, whatever...
+ 
+*/

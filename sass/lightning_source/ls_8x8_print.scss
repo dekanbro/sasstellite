@@ -1,0 +1,25 @@
+// Base overrides
+
+//Trim and page margins
+//this is slightly bigger to match lightning source bleed requirments //
+$doc-trim-width: 8in;
+$doc-trim-height: 8in;
+
+@import 'trimrules'; 
+
+// Inherit from base...
+ 
+@import '../base/base_print';
+
+ 
+//
+ 
+// Theme-specific CSS goes here: modules, widgets, plugins, whatever...
+
+.chapter {
+column-count: 2;
+}
+.CHAPTTL, .CHAPNUM, .CHAPAU, .SUB, blockquote {
+column-span: all;
+}
+//

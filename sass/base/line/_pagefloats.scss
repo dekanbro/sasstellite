@@ -1,0 +1,16 @@
+
+.FLOATOUTSIDE {
+    float: right;
+    width: $base-line-height * 10;
+    margin-right: -2 * $base-line-height;
+
+  }
+.FLOATINSIDE {
+      float: left;
+      width: $base-line-height * 10;
+      margin-left: -2 * $base-line-height;
+
+
+  }
+
+

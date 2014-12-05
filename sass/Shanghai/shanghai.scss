@@ -1,0 +1,118 @@
+// Base overrides
+$base-line-height: 15pt;
+$base-text-size: 11.5pt;
+$heading-text-align: left;
+$font-size-httlpgttl: 20pt;
+$font-size-tlpgttl:   40pt;
+$font-size-tlpgsub:   15pt;
+$font-size-chapnum: 11pt;
+$font-size-subttl:  14pt ;
+$font-size-tlpgau:    26pt;
+$font-size-chapttl: 24pt;
+$font-size-partnum: 14pt;
+$font-size-partttl: 44pt;
+$font-size-bma:     12pt;
+$font-size-bmb:     12pt;
+$drop-cap: big-drop;
+ // dropcap test
+$dc-fontsize: $base-line-height * 3;
+$dc-lh:  $dc-fontsize - $base-line-height;
+$dc-mt: $base-line-height * -.1;
+// Inherit from base...
+ 
+@import '../base/base_line';
+
+/* theme specific overrides */
+
+.chapter > p:first-of-type:first-letter { 
+
+	font-family:SAT_semibold, SAT_regular;
+	float: left; 
+	font-size: $dc-fontsize; 
+	line-height: $dc-lh; 
+	padding-right: 1pt;
+    margin-top:  $dc-mt;
+
+}
+
+.chapter > p:first-of-type {
+  margin-top:  $dc-mt;
+}
+
+h4.BMA + p:first-of-type {
+  margin-top: inherit;
+}
+
+h4.BMA + p:first-of-type:first-letter {
+  font-family: inherit;
+  float: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  padding-right: inherit;
+  margin-top: inherit;
+}
+
+p.nodrop:first-of-type:first-letter {
+  font-family: inherit;
+  float: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  padding-right: inherit;
+  margin-top: inherit;
+}
+h1.HTTLPGTTL {
+text-align:center;
+    text-transform: uppercase;
+    font-family: SAT_semibold, SAT_regular;
+    font-weight: 800;
+    margin-top: $base-margin-size-xxlarge;
+}
+h1.TTLPGTTL {
+    letter-spacing: 0;
+    font-family:SAT_semibold, SAT_regular;
+    text-align:left;
+    text-indent: -.5em;
+    margin-top: $base-margin-size-xlarge;
+    margin-left: .25in;
+}
+.TTLPGSUB {
+    margin-top: .5em;
+    margin-left: .5em;
+    font-family: SAT_italic;
+    text-align:left;
+    letter-spacing: 0;
+}
+.TTLPGAU {
+margin-left: $font-size-tlpgsub / 2;
+margin-top: $base-margin-size-xxlarge;
+    font-family:SAT_semibold, SAT_regular;
+    text-align: left;
+}
+h2.CHAPTTL {
+    font-family: SAT_disp_regular;
+    text-indent:-.8em;
+    margin-bottom:.5em;
+    margin-left: .25in;
+}
+h2.CHAPTTL + .BMA {
+    margin-top: $base-margin-size-large;
+}
+h2.FMTTL {
+    font-family: SAT_disp_regular;
+    text-indent:-.8em;
+    margin-bottom:$base-margin-size-large;
+    margin-left: .25in;
+}
+h3.SUB {
+    font-family: SAT_italic;
+}
+h6.PARTNUM {
+    font-family: SAT_italic;
+    margin-bottom:$base-margin-size-xlarge;
+}
+h2.PARTTTL {
+    font-family: SAT_disp_regular;
+}
+h4.BMA {
+    font-family: SAT_disp_regular;
+}

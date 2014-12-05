@@ -1,0 +1,48 @@
+/*-------------Rear matter--------------*/
+
+
+
+p first {
+	font-size: 10pt;
+	line-height: 12pt;
+	text-indent: 0;
+	}
+
+p {
+	font-size: 10pt;
+	line-height: 12pt;
+	text-indent: 12pt;
+	}	
+
+.BIB, .GLOS {
+	font-size: 10pt;
+	line-height: 12pt;
+	margin-left:12pt;
+	text-indent: -12pt;
+	}
+
+*[class^='IDX'] {
+	hyphens:none;
+	-webkit-hyphens:none;
+
+	font-size:9pt;
+	line-height:11pt;
+
+	text-align:left;
+	}
+
+.IDX {
+	margin:0 0 0 20pt;
+	text-indent:-20pt;
+	}
+
+.IDXSUB {
+	margin:0 0 0 20pt;
+	text-indent:-10pt;
+	}
+
+.IDXSUBSUB {
+	margin:0 0 0 30pt;
+	text-indent:-10pt;
+	}
+

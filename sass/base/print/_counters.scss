@@ -1,0 +1,16 @@
+body {
+  counter-reset: ChapterNo PartNo;
+}
+// incremnt chapter count at the heading of each chapter */
+#body-matter .chapter h2 {
+  counter-increment: ChapterNo;
+}
+
+// incremnt part count at the heading of each part */
+#body-matter .part h2 {
+  counter-increment: PartNo;
+}
+// this resets the page counter so page 1 starts on chapter 1 */
+#body-matter {
+  counter-reset: page 1;
+}

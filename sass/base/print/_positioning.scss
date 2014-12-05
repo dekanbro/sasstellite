@@ -1,0 +1,20 @@
+
+// special page alighnment */
+// Text Boxes */
+// center vertically and horizontally*/
+#title, #half-title, #epigraph, #dedication, #card-page {
+position: absolute;
+margin: auto;
+text-align: center;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+}
+
+// position on the bottom */
+#copyright {
+  position: absolute;
+  bottom: 0;
+}
+

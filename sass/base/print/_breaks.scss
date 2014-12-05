@@ -1,0 +1,20 @@
+// start sections and chapters on right page */
+#front-matter > div, #body-matter > div, #rear-matter > div {
+  page-break-before: right;
+}
+
+// copyright on left or right page jus make sure it breaks before */
+div#copyright  {
+page-break-before: always;
+}
+div#epigraph  {
+page-break-before: always;
+}
+div#card-page  {
+page-break-before: always;
+}
+
+.PAGE-BREAK {
+page-break-before: always;
+    
+}

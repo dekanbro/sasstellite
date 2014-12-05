@@ -1,0 +1,11 @@
+// pdf bookmarks */
+div > h2 { 
+bookmark-level: 1; 
+bookmark-state: closed;
+}
+h3, h4, h5, h6 { prince-bookmark-level: none }
+#copyright{ 
+bookmark-level: 1; 
+bookmark-state: closed;
+bookmark-label: "Copyright Page"
+}

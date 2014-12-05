@@ -1,0 +1,94 @@
+
+/* TOC Styles */
+
+#contents .FMTTL {
+	margin:$base-margin-size 15pt $base-margin-size-large 0;
+} 
+#contents h2 + .toc_fm {
+	margin-top: $base-margin-size-large;
+}
+#contents li a {
+	text-decoration: none;
+	color:inherit;
+}
+#contents ul { 
+	text-align:left;
+	list-style-type: none;
+}
+
+/*----------front matter-----------*/
+
+#contents .toc_fm, #contents .toc_fm_list {
+	margin:0 0 $base-margin-size-medium 0;
+	}
+	
+.TOCFM {
+	font-family: SAT_italic;
+	margin:0;
+
+	}
+
+/*----------body matter-----------*/
+
+#contents .toc_bd_list {
+	margin:0;
+	counter-reset: LiChapterNo;
+	}
+
+.TOCPART {
+	font-family: SAT_bold;
+	text-align: left;
+	text-indent: 0;
+	margin: 12pt 0 base-line-leftover(12pt);
+	}
+
+.TOCPART .TOCNUM { 
+	padding-right:4pt;
+	font-family: SAT_bold;
+	letter-spacing: 0;
+	font-size: 11pt;
+	/*counter-increment: LiChapterNo;
+	content: " " counter(LiChapterNo);*/
+	}
+.TOCCHAP .TOCNUM { 
+
+	font-family: SAT_bold;
+	text-align: right;
+	margin-left: 0pt;
+	padding-right: 8pt;
+	text-transform: uppercase;
+	letter-spacing: 0;
+	font-size: 11pt;
+	counter-increment: LiChapterNo;
+	content: " " counter(LiChapterNo);
+	}
+
+.TOCCHAP {
+/*------margin-left is 
+width of span.num + padding-right------*/
+	font-size:11.25pt;
+	line-height:15pt;
+	margin-left:0;
+	padding-bottom:4pt;
+	text-indent:0;
+	}
+
+.TOCAU {
+display: block;
+margin-left: 10%;
+}
+
+/*----------rear matter-----------*/
+
+#contents .toc_rm, #contents .toc_rm_list {
+	margin:16pt 0 0 0;
+}
+
+.TOCRM {
+	font-family: SAT_italic;
+	font-size:11.25pt;
+	line-height:15pt;
+	margin-left:0;
+	margin-bottom:4pt;
+	text-indent:0em;
+	}

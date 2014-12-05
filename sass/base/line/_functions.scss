@@ -1,0 +1,17 @@
+// Finds the next line height based on the font size.
+// this should help keep the pages balanced 
+ 
+@function next-base-line ($font-size) {
+    @return ceil($font-size / $base-line-height) * $base-line-height
+}
+
+// finds the next base line heght to even off a margin 
+@function next-base-line-margin ($margin) {
+    @return ceil($margin / $base-line-height) * $base-line-height;
+}
+
+// returns the leftover of the base line size so it can be used or added to a bottom margin
+// to even things out 
+@function base-line-leftover ($height) {
+    @return  ceil($height / $base-line-height) * $base-line-height - $height;
+}

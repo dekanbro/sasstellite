@@ -1,0 +1,63 @@
+ @mixin all-position-floats {
+
+    max-width: $doc-trim-width; 
+    max-height: $doc-trim-height;
+    overflow: hidden;
+}
+ 
+.FLOATTOP {
+@include all-position-floats;
+  float: top;
+  }
+.FLOATBOT {
+  float: bottom;
+@include all-position-floats;
+  }
+.FLOATTOPNECESSARY {
+  float: top unless-fit;
+@include all-position-floats;
+
+  }
+ 
+.FLOATBOTNECESSARY {
+  float: bottom unless-fit;
+@include all-position-floats;
+
+  }
+.FLOATOUTSIDE {
+    float: outside;
+    margin-outside: $doc-trim-width * -.10;
+    margin-inside: 1em;
+    width:  $doc-trim-width * .33;
+
+  }
+.FLOATINSIDE {
+      float: inside;
+      margin-inside: $doc-trim-width * -.10;
+      margin-outside: 1em;
+      width:  $doc-trim-width * .33;
+
+  }
+
+.FLOATINL {
+@include all-position-floats;
+    text-align: center;
+}
+
+div.FULLPAGE {
+@include all-position-floats;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    float: top;
+}
+.FULLPAGE img {
+width: 100%;
+height: 100%;
+padding: 0;
+margin: 0;
+}
+.EXTBOX {
+columns: 2;
+margin: 1em 0 1em 0;
+}

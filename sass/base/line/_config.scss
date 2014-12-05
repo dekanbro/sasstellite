@@ -1,0 +1,66 @@
+// body text density
+// base line grid will be based off line height
+// base line height should be more than text size*/
+$base-line-height: 14pt !default;
+$base-margin-size: $base-line-height !default;
+$base-text-size: 12pt !default;
+$base-text-indent: 12pt !default;
+
+// default margin sizes these will keep to the base line grid
+// if you want to use another size use one of the base line functions to get
+// the correct leftover margin size on the opisite side of the custom margin
+// They should always add up to a factor of line-height 
+$base-margin-size-xxlarge: $base-margin-size*7  !default;
+$base-margin-size-xlarge: $base-margin-size*5  !default;
+$base-margin-size-large: $base-margin-size*3  !default;
+$base-margin-size-medium: $base-margin-size*2  !default;
+
+//default size of textbreak
+$text-break-height: 1em !default;
+
+// font families dont change these here.  THey can be changed in the Book Template form
+$doc-regular: SAT_regular !default;
+$doc-bold: SAT_bold !default;
+$doc-italic: SAT_italic !default;
+$doc-display-bold: SAT_disp_bold !default;
+$doc-display-italic: SAT_disp_italic !default;
+
+// lists 
+$list-line-height: $base-line-height !default;
+$list-text-size: 75% !default;
+$list-margin: $base-line-height 0 $base-line-height 0;
+$list-item-margin-top: $base-line-height * .2 !default;
+// headings 
+// change these to fit your needs 
+$heading-font: $doc-display-bold !default;
+$heading-letter-spacing: .1em !default;
+$heading-text-align: center !default;
+
+// drop cap options
+//big-drop or big-cap or none
+$drop-cap: big-drop !default;
+// dropcaps
+$dc-fontsize: $base-line-height * 3 !default;
+$dc-lh:  $dc-fontsize - $base-line-height !default;
+$dc-mt: $base-line-height * -.1 !default;
+
+//
+$font-size-partnum: 30pt !default;
+$font-size-partttl: 22pt !default;
+$font-size-chapnum: 34pt !default;
+$font-size-chapttl: 28pt !default;
+$font-size-chapau:  16pt !default;
+
+$font-size-subttl:  22pt !default;
+$font-size-bma:     18pt !default;
+$font-size-bmb:     14pt !default;
+
+$sub-title-transform: uppercase !default;
+
+// title page
+$font-size-httlpgttl: 14pt !default;
+$font-size-tlpgttl:   40pt !default;
+$font-size-tlpgsub:   24pt !default;
+$font-size-tlpgau:    22pt !default;
+
+@import 'functions';

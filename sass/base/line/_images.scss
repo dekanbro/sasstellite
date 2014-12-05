@@ -1,0 +1,20 @@
+// display block allows the image to center
+img { 
+    border:none;
+    display:block;
+    margin:0 auto; 
+    max-width: 100%; 
+    max-height: 100%; 
+    }
+
+.CAP {
+    hyphens:none;
+    -webkit-hyphens:none;
+
+    font-size:9.5pt;
+    line-height:12pt;
+
+    margin: 0;
+    padding: 6px 0 6px 0;
+    text-indent:0px;
+    }

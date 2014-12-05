@@ -1,0 +1,30 @@
+// Base overrides
+ /*
+$font-size-partnum: 30pt;
+$font-size-partttl: 22pt;
+$font-size-chapnum: 34pt;
+$font-size-chapttl: 28pt;
+$font-size-chapau:  16pt;
+
+$font-size-subttl:  2pt;
+$font-size-bma:     8pt;
+$font-size-bmb:     4pt;
+
+
+$font-size-httlpgttl: 114pt;
+$font-size-tlpgttl:   140pt;
+$font-size-tlpgsub:   124pt;
+$font-size-tlpgau:    22pt;
+ */
+// Inherit from base...
+ 
+@import '../base/base_line';
+
+
+ 
+/**
+ 
+Theme-specific CSS goes here: modules, widgets, plugins, whatever...
+ **/
+ 
+

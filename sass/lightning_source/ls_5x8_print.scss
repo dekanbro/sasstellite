@@ -1,0 +1,19 @@
+// Base overrides
+ 
+//Trim and page margins
+//this is slightly bogger to match lightning source bleed requirments //
+$doc-trim-width: 5in;
+$doc-trim-height: 8in;
+
+@import 'trimrules';
+
+// Inherit from base...
+ 
+@import '../base/base_print';
+
+ 
+//
+ 
+// Theme-specific CSS goes here: modules, widgets, plugins, whatever...
+ 
+//

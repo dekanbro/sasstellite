@@ -1,0 +1,82 @@
+// clear
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    margin: 0;
+    }
+body {
+    font-family: SAT_regular;
+    font-size: $base-text-size;
+    line-height: $base-line-height;
+    text-align: justify;
+    /* remove automattic ligatures */
+    font-variant: prince-opentype(ccmp)
+}
+p {
+    margin: 0;
+    text-indent:0;
+}
+p + p {
+    text-indent:$base-text-indent;
+    margin: 0;
+}
+p + .BMA, p + .BMB, p + h4, p + h5 {
+    margin-top: $base-margin-size;
+}
+
+blockquote {
+	margin:$base-line-height $base-line-height;
+	}
+
+#body-matter h2 + h4.BMA, #body-matter h2 + h5.BMB {
+    margin-top: $base-margin-size-large;
+}
+#body-matter h2 + h3 + blockquote {
+    margin-top: $base-margin-size-large;
+ }
+#body-matter h2 + blockquote {
+    margin-top: $base-margin-size-large;
+ }
+#body-matter h2 + h3 + p {
+    margin-top: $base-margin-size-large;
+ }
+#body-matter h2 + p {
+    margin-top: $base-margin-size-large;
+ }
+ 
+a {
+	color:inherit;
+	text-decoration: none;
+	}
+
+
+// initials
+.chapter > p:first-of-type:first-letter { 
+
+  @if $drop-cap == big-drop {
+    font-family: SAT_disp_regular;
+	float: left; 
+	font-size: $dc-fontsize; 
+	line-height: $dc-lh; 
+	padding-right: 1pt;
+    margin-top:  $dc-mt;
+  } @else if $drop-cap == big-cap {
+    font-family: SAT_disp_regular;
+	font-size: $base-text-size * 2; 
+	padding-right: 1pt;
+  } 
+
+
+
+}
+
+p + p.no_indent {
+    text-indent: 0;
+}
+#body-matter .chapter > p.no_indent:first-of-type:first-letter {
+    font-family: inherit;
+    float: inherit; 
+    font-size: inherit; 
+    line-height: inherit; 
+    padding-right: inherit;
+    margin-top: inherit;
+}

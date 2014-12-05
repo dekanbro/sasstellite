@@ -1,0 +1,10 @@
+// for toc link to page number*/
+    #contents .TOCCHAP  a:after, #contents .toc_rm_list  a:after { 
+    // leader adds space betwwen the page number and the toc element */
+    // leader(".") this would add dots example chapter 3..........23  */
+    // leader("~") this would add tildes*/
+    content: leader(" ") " " target-counter(attr(href, url), page);
+    }
+    #contents .toc_fm_list  a:after { 
+    content: leader(" ") " " target-counter(attr(href, url), page, lower-roman);
+    }

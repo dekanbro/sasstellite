@@ -1,0 +1,88 @@
+/*--------footnotes, endnotes, superscript-------*/
+.RMTTL {
+	font-size: 80%;
+}
+.RMA {
+	font-size: 80%;
+}
+.FN {
+	font-size: 10pt;
+	line-height: 12pt;
+
+	color: red;
+
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+	}
+
+.EN {
+	font-size: 10pt;
+	line-height: 12pt;
+	color: blue;
+	text-align: justify;
+	text-indent: 12pt;
+	text-decoration: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	}
+
+.note {
+	font-size: 9pt;
+	padding: 0;
+	line-height: 10pt;
+	margin:0;
+	vertical-align:super;
+	}
+
+#end-notes ul {
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+    list-style-type: none;
+	}
+
+#end-notes sup {
+	font-size: 1em;
+	vertical-align: baseline;
+	text-decoration: underline;
+	}
+
+#end-notes sup:after {
+	content: ".";
+	padding:0;
+	}
+
+#end-notes li {
+	font-family: SAT_regular;
+	font-size: 10pt;
+	line-height: 12pt;
+	text-indent: 12pt;
+	margin: 0;
+	padding: 0;
+	}
+
+#end-notes li a {
+	text-decoration: none;
+	color: inherit;
+	}
+
+.Note {
+	font-family: SAT_regular;
+	font-size:10pt;
+	line-height:12pt;
+
+	text-indent:12pt;
+	margin:0px;
+	}
+
+sup {
+	font-size: .75em;
+	padding-left: 2px;
+	padding-right: 2px;
+	line-height: .8em;
+	}
+
+
+

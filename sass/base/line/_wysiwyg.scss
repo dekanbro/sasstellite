@@ -1,0 +1,47 @@
+/*------------------wysiwyg controls------------------*/
+
+
+em {
+    font-family: SAT_italic;
+    }
+
+strong {
+    font-family: SAT_bold;
+    }
+
+.left {
+    text-align: left;
+    }
+
+.right {
+    text-align: right;
+    }
+
+.center {
+    text-align: center;
+    }
+
+.full{
+    text-align: justify;
+    }
+
+.open1 {
+letter-spacing:.01em;
+    }
+
+.open2 {
+letter-spacing:.015em;
+    }
+
+.tight1 {
+word-spacing:-.01em;
+    }
+
+.tight2 {
+word-spacing:-.015em;
+    }
+
+/* nohyphen */
+
+
+

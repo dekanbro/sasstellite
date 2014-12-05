@@ -1,0 +1,108 @@
+@mixin all-matter-title {
+  -webkit-hyphens:none;
+  hyphens:none;
+  font-family: $heading-font;
+  letter-spacing: $heading-letter-spacing;
+  text-align: $heading-text-align;
+
+ 
+}
+@mixin font-size-get-base-line($font-size) {
+    font-size: $font-size;
+    line-height: next-base-line($font-size);
+    }
+
+/*-------------Part headings------------*/
+.PARTNUM {
+    @include all-matter-title;
+    @include font-size-get-base-line($font-size-partnum);
+}
+.PARTTTL {
+    @include all-matter-title;
+    font-family:SAT_regular;
+    margin-bottom: $base-margin-size;
+    @include font-size-get-base-line($font-size-partttl);
+    }
+/*-------------  Chapter/Section headings------------*/
+.CHAPNUM {
+    @include all-matter-title;
+    margin-bottom: $base-margin-size-large;
+    @include font-size-get-base-line($font-size-chapnum);
+}
+/* h2 CHAPTTL, FMTTL, RMTTL */
+.CHAPTTL, .FMTTL, .RMTTL {
+margin-bottom: $base-margin-size-large;
+@include all-matter-title;
+@include font-size-get-base-line($font-size-chapttl);
+
+}
+.CHAPAU {
+ margin-bottom: $base-margin-size-large;
+    @include font-size-get-base-line($font-size-chapau);
+}
+/*------------- body text headings------------*/
+.SUB, h3 {
+    @include all-matter-title;
+    margin-bottom: $base-margin-size;
+    @include font-size-get-base-line($font-size-subttl);
+  }
+
+.BMA, h4 {
+@include all-matter-title;
+@include font-size-get-base-line($font-size-bma);
+vertical-align: bottom;
+}
+
+.BMB, h5 {
+    @include all-matter-title;
+    @include font-size-get-base-line($font-size-bmb);
+    font-family: SAT_italic;
+    margin-bottom: 0;
+    
+    }
+
+/*---------title Headings--------------*/
+
+.HTTLPGTTL {
+    @include all-matter-title;
+    @include font-size-get-base-line($font-size-httlpgttl);
+
+    //margin:$base-margin-size-xlarge 10% $base-margin-size 10%;
+    }
+
+.TTLPGTTL {
+    @include all-matter-title;
+    @include font-size-get-base-line($font-size-tlpgttl);
+    font-family:SAT_disp_bold;
+    //margin:$base-margin-size-xlarge 10%;
+    }
+
+.TTLPGSUB {
+    @include all-matter-title;
+    @include font-size-get-base-line($font-size-tlpgsub);
+    font-family:SAT_disp_bold;
+    //margin:$base-margin-size-xlarge 10%;
+    }
+
+.TTLPGAU {
+    @include all-matter-title;
+    @include font-size-get-base-line($font-size-tlpgau);
+    //margin:$base-margin-size-xlarge 10%;
+    }
+
+.TTLPGAU + .CONTRIB {
+    @include all-matter-title;
+    margin:$base-margin-size-xlarge 10%;
+    }
+
+.TTLPGLOGO {
+    text-align: center;
+    text-indent: 0;
+    margin-top:48pt;
+    float: bottom;
+    }
+
+#title img {
+    width: 50%;
+    }
+

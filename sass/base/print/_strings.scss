@@ -1,0 +1,17 @@
+// set Booktitle, Authortitle and Chaptertitle variables */
+// use attr(title) for alternate title page */
+    #title h1 {
+    string-set: Booktitle attr(title);;
+    }
+    div > h2 {
+    string-set: Chaptertitle content();;
+    }
+    #title h4 {
+    string-set: Authorname attr(title);;
+    }
+    .alt-title {
+    string-set: Chaptertitle attr(title);
+    }
+    .alt-author {
+    string-set: Authorname attr(title);
+    }

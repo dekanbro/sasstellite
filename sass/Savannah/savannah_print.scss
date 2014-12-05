@@ -1,0 +1,25 @@
+
+
+// this should equal paper size (US-letter) when added to inside trim 
+$doc-trim-width: 5.5in;
+$doc-trim-height: 8.5in;
+//leave bleed 0
+$doc-bleed: .125in ;
+$marks: cross crop;
+
+//lightning source only has bleed on the outside edge
+$outside-trim-right-left: (8.5in - $doc-trim-width - $doc-bleed)/2;
+$outside-trim-top-bottom: (11in - $doc-trim-height - ($doc-bleed * 2))/2;
+$doc-outside-trim: $outside-trim-top-bottom $outside-trim-right-left;
+
+$body-matter-header-left:  counter(page) " \a0 | \a0 " string(Authorname);
+$body-matter-header-right: string(Booktitle) " \a0 | \a0 " counter(page);
+// Inherit from base...
+ 
+@import '../base/base_print';
+
+/**
+ 
+Theme-specific CSS goes here: modules, widgets, plugins, whatever...
+ 
+*/

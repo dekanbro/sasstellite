@@ -1,0 +1,75 @@
+//THese are the default values for the print css sass
+// remove the !deafult modifier if using in your own theme
+// When setting fonts use font froups defiened in the book template
+// eg SAT_bold, SAT_italic, SAT_display//
+
+//widows and orphans
+//Change these values to control the numbers of widows and orphans that are allowed.
+// The default values of 2 should be fine.//
+$doc-widows: 2 !default;
+$doc-orphans: 2 !default;
+
+//this is for crop marks
+$marks: none !default;
+
+
+// Trim and page margins
+// the default for these settings are 6.125 by 9.25//
+$doc-trim-width: 6.125in !default;
+$doc-trim-height: 9.25in !default;
+
+//Running Heads//
+// This is the top margin for running heads//
+// 9pt .125in
+$doc-rh-font-size: .125in !default;
+$doc-rh-margin-top: $doc-trim-height * .075 !default;
+$doc-rh-margin-bottom:  $doc-rh-font-size * 2.2 !default;
+$doc-rh-font-family: SAT_bold !default;
+$doc-rh-font-transform: uppercase !default;
+$doc-rh-font-spacing: .1em !default;
+
+
+
+//this is the total margin from body text to edge of bleed
+$doc-margin-top: $doc-rh-margin-top + $doc-rh-font-size + $doc-rh-margin-bottom !default;
+// 45pt = 5/8in
+$doc-margin-bottom: 45pt !default;
+$doc-margin-right: 0 !default;
+$doc-margin-left: 0 !default;
+
+$doc-margin-outside: $doc-trim-width * .10 !default;
+$doc-margin-inside: $doc-trim-width * .125 !default;
+
+$doc-bleed: .125in !default;
+// this should equal paper size when added to inside trim//
+$doc-outside-trim: (8in - $doc-trim-height - $doc-bleed)/2 (11in - $doc-trim-width - $doc-bleed)/2 !default;
+
+// initial page of a chapter/front matter section
+// this is when the page number is on the bottom of the page//
+
+$section-initial-margin-bottom: 1in !default;
+
+// these are the default symbols for footnotes
+// the footnote counter should reset on each page.
+// the escaped unicode characters are dagger and double dagger//
+$fn-symbols: counter(footnote, symbols("*", "**", "***", "****", "\2020", "\2021", "\00A7", "1", "2")) !default;
+
+// the default top and bottom margin for the rest of the document//
+$section-margin-top: 32pt !default;
+$section-margin-bottom: .625in !default;
+
+// front matter running heads \a0 is a space
+// The availible strings are page, Chaptertitle, Booktitle and Authorname//
+$front-matter-header-left: counter(page, lower-roman) " \a0 | \a0 " string(Chaptertitle) !default;
+$front-matter-header-right: string(Chaptertitle) " \a0 | \a0 " counter(page, lower-roman) !default;
+$front-matter-header-first: counter(page, lower-roman) !default;
+
+// body-matter running heads (Chapters and Parts)//
+$body-matter-header-left:  counter(page) " \a0 | \a0 " string(Booktitle) !default;
+$body-matter-header-right: string(Chaptertitle) " \a0 | \a0 " counter(page) !default;
+$body-matter-header-first: counter(page) !default;
+
+// rear matter running heads//
+$rear-matter-header-left:  counter(page) " \a0 | \a0 " string(Chaptertitle) !default;
+$rear-matter-header-right: string(Chaptertitle) " \a0 | \a0 " counter(page) !default;
+$rear-matter-header-first: counter(page) !default;
